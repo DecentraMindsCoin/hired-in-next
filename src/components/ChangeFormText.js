@@ -19,7 +19,7 @@ const ChangeFormText = () => {
       <h1 className='font-bold text-xl uppercase'>Hello {`"${name}"`} </h1>
       <form className="bg-purple-100 mx-5 rounded-full border-2 border-black">
         <div className="py-5">
-          <label className='italic text-black' for="name-1">Update Name Feild</label>
+          <label className='italic text-black' >Update Name Feild</label>
           <div className="py-5">
             <input
               type="text"
@@ -30,9 +30,9 @@ const ChangeFormText = () => {
             />
           </div>
         </div>
-        <div class="field">
-          <div class="control">
-            <button onClick={updateName} class="button is-dark">
+        <div >
+          <div >
+            <button onClick={updateName} >
               Save
             </button>
           </div>

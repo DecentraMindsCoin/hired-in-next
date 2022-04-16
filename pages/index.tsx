@@ -14,7 +14,9 @@ import UseEffect from '../src/components/UseEffectCounter'
 import ConditionalRendering from '../src/components/ConditionalRendering'
 import BetterCounter from '../src/components/BetterCounter'
 import HowComponent from '../src/components/HowOther'
-
+import ScrollEvent from '../src/components/ScrollEvent'
+import Palindrone from '../src/components/Palindrome'
+import Palindrome from '../src/components/Palindrome'
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home: NextPage = () => {
   return (
@@ -27,6 +29,12 @@ const Home: NextPage = () => {
 
       <div className="flex space-y-10">
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
+          <div>
+            <Palindrome />
+          </div>
+          <div>
+            <ScrollEvent />
+          </div>
           <div>
             <BetterCounter />
           </div>
