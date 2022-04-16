@@ -11,6 +11,10 @@ import FetchApi from '../src/components/FetchAPI'
 import UsingContextApi from '../src/components/UsingContextApi'
 import ChangeFormText from '../src/components/ChangeFormText'
 import UseEffect from '../src/components/UseEffectCounter'
+import ConditionalRendering from '../src/components/ConditionalRendering'
+import BetterCounter from '../src/components/BetterCounter'
+import HowComponent from '../src/components/HowOther'
+
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home: NextPage = () => {
   return (
@@ -23,6 +27,12 @@ const Home: NextPage = () => {
 
       <div className="flex space-y-10">
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
+          <div>
+            <BetterCounter />
+          </div>
+          <div>
+            <HowComponent />
+          </div>
           <div>
             <Yarn />
           </div>
@@ -48,15 +58,18 @@ const Home: NextPage = () => {
             <UsingContextApi />
           </div>
           <div>
-               <ChangeFormText />
+            <ChangeFormText />
           </div>
           <div>
-               <UseEffect />
+            <UseEffect />
           </div>
+          <div>
+            <ConditionalRendering />
+          </div>
+
           {/* <div>
                <TicTacComponent />
           </div> */}
-       
         </div>
       </div>
     </div>
