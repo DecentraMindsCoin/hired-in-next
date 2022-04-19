@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Yarn from '../src/components/Yarn'
@@ -18,7 +17,7 @@ import ScrollEvent from '../src/components/ScrollEvent'
 import Palindrone from '../src/components/Palindrome'
 import Palindrome from '../src/components/Palindrome'
 // import TicTacComponent from '../src/components/TicTacComponent'
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div className="">
       <Head>
