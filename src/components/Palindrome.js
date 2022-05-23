@@ -6,11 +6,11 @@ const Palindrome = () => {
   const [success, setSuccess] = useState(false)
   const [fail, setFail] = useState(false)
   const styles = {
-    container: 'w-full flex-row text-center space-y-5',
-    heading: 'w-full text-3xl font-bold uppercase underline',
+    container: 'w-full flex-row text-center space-y-8 py-10 px-5 bg-red-100',
+    heading: 'w-full text-3xl  font-bold uppercase underline',
     input: 'w-full text-center ring-2 ring-black rounded-full outline-none',
     button: 'w-1/2 rounded-full px-3 border-2 border-black',
-    interact: 'flex w-full',
+    interact: 'flex w-full space-x-5',
     success: 'text-emerald-500',
     failure: 'text-amber-500',
   }

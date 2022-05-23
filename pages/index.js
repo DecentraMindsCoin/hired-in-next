@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Yarn from '../src/components/Yarn'
 import ShowHideElement from '../src/components/ShowHideElement'
 import DataBinding from '../src/components/DataBinding'
 import DisableButton from '../src/components/DisableButton'
@@ -14,7 +13,6 @@ import ConditionalRendering from '../src/components/ConditionalRendering'
 import BetterCounter from '../src/components/BetterCounter'
 import HowComponent from '../src/components/HowOther'
 import ScrollEvent from '../src/components/ScrollEvent'
-import Palindrone from '../src/components/Palindrome'
 import Palindrome from '../src/components/Palindrome'
 import LoginForm from '../src/components/LoginForm'
 // import TicTacComponent from '../src/components/TicTacComponent'
@@ -41,9 +39,7 @@ const Home = () => {
           <div>
             <HowComponent />
           </div>
-          <div>
-            <Yarn />
-          </div>
+
           <div>
             <ShowHideElement />
           </div>
