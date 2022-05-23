@@ -15,6 +15,11 @@ import HowComponent from '../src/components/HowOther'
 import ScrollEvent from '../src/components/ScrollEvent'
 import Palindrome from '../src/components/Palindrome'
 import LoginForm from '../src/components/LoginForm'
+import Fibonacci from '../src/components/Fibonacci'
+import Scripts from '../src/components/Scripts'
+import DataStructures from '../src/components/DataStructures'
+
+
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = () => {
   return (
@@ -29,6 +34,9 @@ const Home = () => {
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
           <div>
             <Palindrome />
+          </div>
+          <div>
+            <Fibonacci />
           </div>
           <div>
             <ScrollEvent />
