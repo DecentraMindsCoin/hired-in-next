@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 
 const styles = {
-  wrapper: `relative mx-auto h-full  w-full space-y-5 bg-pink-400 text-center font-mono `,
+  wrapper: `relative mx-auto h-96  w-full space-y-5 bg-pink-400 text-center font-mono `,
   container: `absolute top-1/3 w-full`,
   heading: `underline text-xl font-bold uppercase`,
   button: `rounded-full border-2 px-4 py-1 my-5 hover:bg-white hover:text-black `,

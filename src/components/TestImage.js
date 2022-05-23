@@ -9,8 +9,8 @@ const TestImage = () => {
     }
   }, [])
   return (
-    <div className="relative h-20 w-20">
-      <Image className="absolute" src="/dog.jpeg" layout="fill" />
+    <div className="relative h-32 w-screen">
+      <Image className="absolute object-cover" src="/dog.jpeg" layout="fill" />
     </div>
   )
 }
