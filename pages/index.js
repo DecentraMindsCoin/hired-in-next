@@ -16,6 +16,7 @@ import HowComponent from '../src/components/HowOther'
 import ScrollEvent from '../src/components/ScrollEvent'
 import Palindrone from '../src/components/Palindrome'
 import Palindrome from '../src/components/Palindrome'
+import LoginForm from '../src/components/LoginForm'
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = () => {
   return (
@@ -72,6 +73,9 @@ const Home = () => {
           </div>
           <div>
             <ConditionalRendering />
+          </div>
+          <div>
+            <LoginForm />
           </div>
 
           {/* <div>
