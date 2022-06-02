@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import '../styles/slider.css'
+
 import { ThemeProvider } from '../lib/ThemeContext'
 
 function MyApp({ Component, pageProps }) {

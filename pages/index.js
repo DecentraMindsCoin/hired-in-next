@@ -34,7 +34,7 @@ const Home = () => {
 
       <div className="flex space-y-10">
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
-          <div>
+          <div >
             <ImageSlider />
           </div>
           <div>
@@ -52,7 +52,6 @@ const Home = () => {
           <div>
             <HowComponent />
           </div>
-
           <div>
             <ShowHideElement />
           </div>
@@ -86,7 +85,6 @@ const Home = () => {
           <div>
             <LoginForm />
           </div>
-
           {/* <div>
                <TicTacComponent />
           </div> */}
