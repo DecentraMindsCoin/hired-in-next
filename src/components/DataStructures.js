@@ -10,7 +10,11 @@ for (let el of names) {
 }
 
 names.push('julie')
-console.log(names.length)
+// console.log(names.length)
 
 const findTom = names.findIndex((el) => el === 'tom')
-console.log(findTom)
+// console.log(findTom)
+
+//splice removes index specified from array
+names.splice(1, 2)
+console.log(names)

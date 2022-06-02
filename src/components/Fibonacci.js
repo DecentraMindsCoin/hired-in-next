@@ -10,7 +10,6 @@ const styles = {
   input: `w-full border-2 outline-none px-5 flex-shrink absolute`,
 }
 
-
 export default function Fibonacci() {
   const [inp, setInp] = useState(null)
   const [result, setResult] = useState([])
@@ -37,3 +36,16 @@ export default function Fibonacci() {
     </div>
   )
 }
+
+// fib in vanilla javascript using memoized functions
+// add memo argument
+const fib = (n, memo = {}) => {
+    // add base case for memoized key from object
+  if (n in memo) return memo[n] 
+  if (n <= 2) return 1
+  // add stored logic and passes memo object.
+  memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
+  return memo[n]
+}
+
+console.log(fib(6))

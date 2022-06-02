@@ -32,16 +32,16 @@ const Palindrome = () => {
       palindrome.push(elem) 
     }
   }
-  //clear palindrone in reset or component did unmount lastof parent js function checkPalindrome
+  //clear palindrone in reset or component did unmount last of parent js function checkPalindrome
   const clearPalindrome = () => {
     palindrome = []
   }
-
+ 
   //after reversing word you need to join it!
   const concatWord = () => {
     palindrome = palindrome.join('')
     console.log(palindrome)
-  }
+  } 
   //after joining  check if palindrone!
   const confirmMatch = () => {
     if (input === palindrome) {

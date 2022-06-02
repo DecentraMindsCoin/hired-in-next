@@ -16,9 +16,11 @@ import ScrollEvent from '../src/components/ScrollEvent'
 import Palindrome from '../src/components/Palindrome'
 import LoginForm from '../src/components/LoginForm'
 import Fibonacci from '../src/components/Fibonacci'
-import Scripts from '../src/components/Scripts'
+import Promises from '../src/components/Promises'
 import DataStructures from '../src/components/DataStructures'
-
+import GridTraveler from '../src/components/GridTraveler'
+import CanSum from '../src/components/TargetSum'
+import ImageSlider from '../src/components/Slider/ImageSlider'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = () => {
@@ -32,6 +34,9 @@ const Home = () => {
 
       <div className="flex space-y-10">
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
+          <div>
+            <ImageSlider />
+          </div>
           <div>
             <Palindrome />
           </div>
