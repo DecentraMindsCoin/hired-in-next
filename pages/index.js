@@ -33,7 +33,7 @@ const Home = () => {
       </Head>
 
       <div className="flex space-y-10">
-        <div className="mx-auto grid w-full max-w-3xl grid-cols-2">
+        <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
           <div >
             <ImageSlider />
           </div>

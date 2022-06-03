@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+
 const url = 'https://jsonplaceholder.typicode.com/users/1 '
 /** 
   // Sample Response
@@ -12,6 +13,8 @@ const url = 'https://jsonplaceholder.typicode.com/users/1 '
     website: "hildegard.org"
   }
 **/
+
+
 export default function FetchApi() {
   const [userData, setUserData] = useState({})
 
