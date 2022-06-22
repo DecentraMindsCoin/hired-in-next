@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 
 const styles = {
-  wrapper: ` relative w-full h-full text-center  py-3 `,
-  container: ` w-full flex-row space-y-3`,
-  buttonContainer: `justify-around flex w-full`,
-  button: `rounded-full border-2 px-5 py-1`,
-  styles: `relative px-5 w-full`,
-  inputContainer: `w-full flex relative`,
-  input: `w-full border-2 outline-none px-5 flex-shrink absolute`,
+ 
+    wrapper: `text-center w-full font-mono mx-auto  h-full py-7 bg-pink-500 bg-opacity-50  font-bold uppercase tracking-wider italic cursor-pointer space-y-5`,
+  
+  container: ` w-full flex-row space-x-3`,
+ 
+  button: `rounded-full border-2 px-2  py-1`,
+
+  input: `border-2 outline-none px-5 rounded-xl border-2 border-black`,
 }
 
 export default function Fibonacci() {
@@ -28,10 +29,13 @@ export default function Fibonacci() {
   }
 
   return (
-    <div className="App">
+    <div className={styles.wrapper}>
       <h1>Fibonacci Series</h1>
-      <input type="number" onChange={(e) => setInp(e.target.value)} />
-      <button onClick={() => setResult(fibonacci(inp))}>Get Result</button>
+      <div className={styles.container}>
+         <input className={styles.input} type="number" onChange={(e) => setInp(e.target.value)} />
+      <button className={styles.button} onClick={() => setResult(fibonacci(inp))}>Get Result</button>
+      </div>
+     
       <h2>{result}</h2>
     </div>
   )
