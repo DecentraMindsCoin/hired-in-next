@@ -21,7 +21,7 @@ import DataStructures from '../src/components/DataStructures'
 import GridTraveler from '../src/components/GridTraveler'
 import CanSum from '../src/components/TargetSum'
 import ImageSlider from '../src/components/Slider/ImageSlider'
-import Parent from '../src/components/ChildToParent/Parent'
+import Parent from '../src/components/Parent'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = () => {
