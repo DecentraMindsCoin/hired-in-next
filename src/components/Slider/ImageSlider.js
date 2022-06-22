@@ -8,26 +8,31 @@ const dataSlider = [
     id: uuidv4(),
     title: 'Lorem ipsum',
     subTitle: 'Lorem',
+    dataId: 0,
   },
   {
     id: uuidv4(),
     title: 'Lorem ipsum',
     subTitle: 'Lorem',
+    dataId: 1,
   },
   {
     id: uuidv4(),
     title: 'Lorem ipsum',
     subTitle: 'Lorem',
+    dataId: 2,
   },
   {
     id: uuidv4(),
     title: 'Lorem ipsum',
     subTitle: 'Lorem',
+    dataId: 3,
   },
   {
     id: uuidv4(),
     title: 'Lorem ipsum',
     subTitle: 'Lorem',
+    dataId: 4,
   },
 ]
 
@@ -77,7 +82,7 @@ const ImageSlider = () => {
       {dataSlider.map((obj, index) => {
         return (
           <div
-            key={obj.id}
+            key={obj.dataId}
             className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}
           >
             <img
