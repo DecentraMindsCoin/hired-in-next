@@ -37,7 +37,7 @@ export default function LoginForm() {
     setLoading(true)
     try {
       await login({ email, password })
-      alert("Login succesfull")
+      alert("Login successfull")
       setLoading(false)
     } catch (error) {
       setError(error.message)
