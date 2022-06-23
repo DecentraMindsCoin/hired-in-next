@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-const url = 'https://jsonplaceholder.typicode.com/users/1 '
+const url = 'https://jsonplaceholder.typicode.com/users/2 '
 /** 
   // Sample Response
   {
@@ -47,3 +47,4 @@ export default function FetchApi() {
     </div>
   )
 }
+

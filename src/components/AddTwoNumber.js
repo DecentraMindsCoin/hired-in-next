@@ -19,7 +19,6 @@ const AddTwoNumber = () => {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heading}>Add two numbers</h1>
-
       <input
         placeholder="First Number"
         type="number"

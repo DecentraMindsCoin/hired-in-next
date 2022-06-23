@@ -24,9 +24,12 @@ import ImageSlider from '../src/components/Slider/ImageSlider'
 import Parent from '../src/components/Parent'
 import UseRef from '../src/components/UseRef'
 import CodingInterview from '../src/components/CodingInterview'
-
+import Link from 'next/link'
+import PostsApi from '../src/components/PostsApi'
+import CSRPosts from '../src/components/CSRPosts'
+import CountVowels from '../src/components/CountVowels'
 // import TicTacComponent from '../src/components/TicTacComponent'
-const Home = () => {
+const Home = ({ posts }) => {
   return (
     <div className="">
       <Head>
@@ -37,7 +40,7 @@ const Home = () => {
 
       <div className="flex space-y-10">
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
-          <div >
+          <div>
             <ImageSlider />
           </div>
           <div>
@@ -92,11 +95,11 @@ const Home = () => {
             <Parent />
           </div>
           <div>
-            <UseRef />
+            <PostsApi posts={posts} />
           </div>
-          {/* <div>
-               <TicTacComponent />
-          </div> */}
+          <div>
+            <CSRPosts />
+          </div>
         </div>
       </div>
     </div>
@@ -104,3 +107,9 @@ const Home = () => {
 }
 
 export default Home
+export const getStaticProps = async () => {
+  const API_URL = 'https://jsonplaceholder.typicode.com/users'
+  const request = await fetch(API_URL)
+  const posts = await request.json()
+  return { props: { posts }, revalidate : 60  }
+}
