@@ -17,3 +17,28 @@ const Snippets = () => {
 }
 
 export default Snippets
+
+// npx create-react-app@latest .
+// npx create-next-app@latest .
+
+// npx create-next-app -e with-tailwindcss test-app
+// npm install -D tailwindcss postcss autoprefixer
+// npx tailwindcss init -p
+// content: [
+//   "./pages/**/*.{js,ts,jsx,tsx}",
+//   "./components/**/*.{js,ts,jsx,tsx}",
+// ],
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// yarn create react-app my-app --template typescript
+// yarn add typescript @types/node @types/react @types/react-dom @types/jest
+
+
+// yarn add cypress start-server-and-test --dev
+// yarn: yarn run cypress open
+// "cy:open-only": "cypress open",
+// "cy:run-only": "cypress run",
+// "cy:open": "start-server-and-test dev 3000 cy:open-only",
+// "cy:run": "start-server-and-test dev 3000 cy:run-only"

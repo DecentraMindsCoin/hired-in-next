@@ -4,11 +4,12 @@ const styles = {
  
     wrapper: `text-center w-full font-mono mx-auto  h-full py-7 bg-pink-500 bg-opacity-50  font-bold uppercase tracking-wider italic cursor-pointer space-y-5`,
   
-  container: ` w-full flex-row space-x-3`,
+  container: `w-full flex-row space-x-3 `,
  
   button: `rounded-full border-2 px-2  py-1`,
 
   input: `border-2 outline-none px-5 rounded-xl border-2 border-black`,
+  result: `break-words`
 }
 
 export default function Fibonacci() {
@@ -36,7 +37,7 @@ export default function Fibonacci() {
       <button className={styles.button} onClick={() => setResult(fibonacci(inp))}>Get Result</button>
       </div>
      
-      <h2>{result}</h2>
+      <h2 className={styles.result}>{result}</h2>
     </div>
   )
 }
