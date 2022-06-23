@@ -68,7 +68,7 @@ const Palindrome = () => {
   }
   return (
     <div className={tw.container}>
-      <h1 className={tw.heading}>Palindrome Test</h1>
+      <h1 className={tw.heading}>The Palindrome Test</h1>
       <div className={tw.interact}>
         <input
           onChange={(e) => handleInput(e)}
