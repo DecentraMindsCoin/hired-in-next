@@ -15,11 +15,9 @@ const HowOther = () => {
     <div className={tw.container}>
       <div className={tw.buttons}>
         <button className={tw.button} onClick={() => setShowComponent(false)}>
-          {' '}
           Hide Component
         </button>
         <button className={tw.button} onClick={() => setShowComponent(true)}>
-          {' '}
           Show Component
         </button>
       </div>
