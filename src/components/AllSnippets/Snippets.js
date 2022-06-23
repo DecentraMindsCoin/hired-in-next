@@ -42,3 +42,25 @@ export default Snippets
 // "cy:run-only": "cypress run",
 // "cy:open": "start-server-and-test dev 3000 cy:open-only",
 // "cy:run": "start-server-and-test dev 3000 cy:run-only"
+
+// yarn add @apollo/client graphql graphql-request
+// import { GraphQLClient } from "graphql-request";
+// url = api Endpoint graphCMS
+// 
+// export async function getStaticProps() {
+//   const url = process.env.ENDPOINT;
+//   const graphcms = new GraphQLClient(url);
+//   const { components } = await graphcms.request(
+//     `{
+//       components {
+//        ...
+//       }
+//     }`
+//   );
+
+//   return {
+//     props: {
+//       components,
+//     },
+//   };
+// }
