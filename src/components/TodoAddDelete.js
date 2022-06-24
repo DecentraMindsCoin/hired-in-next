@@ -18,7 +18,7 @@ const TodoAddDelete = () => {
   const changeHandler = (e) => {
     setValue(e.target.value)
   }
-
+//submit functionality for adding todo to the list 
   const submitHandler = () => {
     setList([...list, value])
     setValue('')
