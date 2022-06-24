@@ -28,6 +28,7 @@ import Link from 'next/link'
 import PostsApi from '../src/components/PostsApi'
 import CSRPosts from '../src/components/CSRPosts'
 import CountVowels from '../src/components/CountVowels'
+import Fishing from '../src/components/FishingData'
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = ({ posts }) => {
   return (
@@ -99,6 +100,9 @@ const Home = ({ posts }) => {
           </div>
           <div>
             <CSRPosts />
+          </div>
+          <div>
+            <Fishing />
           </div>
         </div>
       </div>

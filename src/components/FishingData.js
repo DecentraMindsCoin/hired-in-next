@@ -1,44 +1,53 @@
-import React, { useState } from "react";
-import { fishingRegulations } from "../../lib/Data";
+import React, { useState } from 'react'
+import { fishingRegulations } from '../../lib/Data'
 
 const Fishing = () => {
-  const [fishData, setFishData] = useState(() => fishingRegulations);
+  const [fishData, setFishData] = useState(() => fishingRegulations)
   return (
-    <div className="h-screen w-full relative">
-      <ul className="w-full absolute mx-auto text-center">
+    <div className="relative h-screen w-full">
+      <ul className="absolute mx-auto w-full text-center">
         {fishData.map((data, index) => (
-          <li key={index} className="pt-10 px-10 text-left">
+          <li key={index} className="px-10 pt-10 text-left">
             <p>{data.species}</p>
             <p>{data.nicknames ? `${data.nicknames},` : <>*none*</>}</p>
             <div>
-              {data.seasons.map((date) => (
-                <div className="flex">
-                  Opens: {date.opening} - Closes:{" "}
+              {data.seasons.map((date, index) => (
+                <div key={index} className="flex">
+                  Opens: {date.opening} - Closes:{' '}
                   <p>
                     {date.opening || date.close ? (
                       date.close && date.close
                     ) : (
                       <>*Open Season</>
-                    )}{" "}
+                    )}{' '}
                   </p>
                 </div>
               ))}
             </div>
             <div>
-              {data.seasons.map((size) => (
-                <div className="flex">
-                  Min: {size.minimumSize ? size.minimumSize + '"' : <>*no size limit*</>}{" "}
-                  - Max:{" "}
+              {data.seasons.map((size, index) => (
+                <div key={index} className="flex">
+                  Min:{' '}
+                  {size.minimumSize ? (
+                    size.minimumSize + '"'
+                  ) : (
+                    <>*no size limit*</>
+                  )}{' '}
+                  - Max:{' '}
                   <p>
-                    {size.maximumSize ? size.maximumSize + '"' : <>*no size limit*</>}{" "}
+                    {size.maximumSize ? (
+                      size.maximumSize + '"'
+                    ) : (
+                      <>*no size limit*</>
+                    )}{' '}
                   </p>
                 </div>
               ))}
             </div>
             <div>
-              {data.seasons.map((bag) => (
-                <div className="flex">
-                  Bag Limit: {bag.bagLimit ? bag.bagLimit : <>*no bag limit*</>}{" "}
+              {data.seasons.map((bag, index) => (
+                <div key={index} className="flex">
+                  Bag Limit: {bag.bagLimit ? bag.bagLimit : <>*no bag limit*</>}{' '}
                 </div>
               ))}
             </div>
@@ -46,7 +55,7 @@ const Fishing = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Fishing;
+export default Fishing

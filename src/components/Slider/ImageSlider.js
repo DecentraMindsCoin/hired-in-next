@@ -82,7 +82,7 @@ const ImageSlider = () => {
       {dataSlider.map((obj, index) => {
         return (
           <div
-            key={obj.dataId}
+            key={index}
             className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}
           >
             <img
@@ -97,6 +97,7 @@ const ImageSlider = () => {
       <div className="container-dots">
         {Array.from({ length: 5 }).map((item, index) => (
           <div
+          key={index}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? 'dot active' : 'dot'}
           ></div>

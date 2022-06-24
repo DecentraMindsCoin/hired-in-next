@@ -6,8 +6,8 @@ const PostsApi = ({ posts }) => {
     <div>
       <main>
         {posts.map((post) => (
-          <Link href={`posts/${post.id}`}>
-            <a key={post.id}>
+          <Link key={post.id }href={`posts/${post.id}`}>
+            <a >
               <div className="pt-10">
                 <h3>{post.name}</h3>
                 <h3>{post.username}</h3>
