@@ -5,7 +5,8 @@ const styles = {
   container: `absolute top-1/3 px-5 flex  justify-around w-full space-x-5`,
   input: `border-2 border-black `,
   button: `border-2 w-full`,
-  list: ``
+  list: ``,
+  listItem: `cursor-pointer py-2 uppercase`,
 }
 
 const TodoAddDelete = () => {
@@ -42,7 +43,11 @@ const TodoAddDelete = () => {
       <ul className={styles.list}>
         {list.length > 0 &&
           list.map((item) => {
-            return <li onClick={() => deleteHandler(item)}>{item}</li>
+            return (
+              <li onClick={() => deleteHandler(item)}>
+                <p className={styles.listItem}>{item}</p>
+              </li>
+            )
           })}
       </ul>
     </div>
