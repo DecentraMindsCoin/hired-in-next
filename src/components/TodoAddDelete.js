@@ -6,7 +6,7 @@ const styles = {
   input: `border-2 border-black `,
   button: `border-2 w-full bg-black text-white rounded-xl py-2`,
   list: `pt-5 text-left  w-1/2 mx-auto mr-10 space-y-5`,
-  listItem: `cursor-pointer uppercase`,
+  listItem: `cursor-pointer uppercase text-light hover:text-bold`,
 }
 
 const TodoAddDelete = () => {
