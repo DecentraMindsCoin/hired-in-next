@@ -29,6 +29,9 @@ import PostsApi from '../src/components/PostsApi'
 import CSRPosts from '../src/components/CSRPosts'
 import CountVowels from '../src/components/CountVowels'
 import Fishing from '../src/components/FishingData'
+import TodoAddDelete from '../src/components/TodoAddDelete'
+
+
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = ({ posts }) => {
   return (
@@ -103,6 +106,9 @@ const Home = ({ posts }) => {
           </div>
           <div>
             <Fishing />
+          </div>
+          <div>
+            <TodoAddDelete />
           </div>
         </div>
       </div>
