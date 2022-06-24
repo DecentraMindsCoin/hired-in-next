@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 
 const styles = {
   wrapper: `bg-fuchsia-200 h-96 relative w-full `,
-  container: `absolute top-1/3 px-5 flex  justify-around w-full space-x-5`,
+  container: `pt-10 px-5 flex  justify-around w-full space-x-5`,
   input: `border-2 border-black `,
-  button: `border-2 w-full`,
-  list: ``,
-  listItem: `cursor-pointer py-2 uppercase`,
+  button: `border-2 w-full bg-black text-white`,
+  list: `pt-5 text-left  w-1/2 mx-auto mr-10 space-y-5`,
+  listItem: `cursor-pointer uppercase`,
 }
 
 const TodoAddDelete = () => {
@@ -37,15 +37,20 @@ const TodoAddDelete = () => {
         />{' '}
         <button className={styles.button} onClick={submitHandler}>
           Add
-        </button>{' '}
+        </button>
       </div>
-      <hr />
+
       <ul className={styles.list}>
         {list.length > 0 &&
-          list.map((item) => {
+          list.map((item, index) => {
             return (
-              <li onClick={() => deleteHandler(item)}>
-                <p className={styles.listItem}>{item}</p>
+              <li key={index}>
+                <p
+                  onClick={() => deleteHandler(item)}
+                  className={styles.listItem}
+                >
+                  {item}
+                </p>
               </li>
             )
           })}
