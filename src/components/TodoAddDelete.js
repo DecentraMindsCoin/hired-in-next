@@ -13,6 +13,7 @@ const TodoAddDelete = () => {
   const [list, setList] = useState([])
   const [value, setValue] = useState('')
 
+  // handle input text as being typed
   const changeHandler = (e) => {
     setValue(e.target.value)
   }
