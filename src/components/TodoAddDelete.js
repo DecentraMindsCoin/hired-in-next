@@ -23,7 +23,7 @@ const TodoAddDelete = () => {
     setList([...list, value])
     setValue('')
   }
-
+// delete functionality for deleting item from list
   const deleteHandler = (item) => {
     setList(list.filter((ele) => ele != item))
   }
