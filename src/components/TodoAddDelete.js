@@ -10,6 +10,7 @@ const styles = {
 }
 
 const TodoAddDelete = () => {
+  // state for list in array and state for value of input
   const [list, setList] = useState([])
   const [value, setValue] = useState('')
 
