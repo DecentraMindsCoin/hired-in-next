@@ -33,7 +33,7 @@ import TodoAddDelete from '../src/components/TodoAddDelete'
 
 
 // import TicTacComponent from '../src/components/TicTacComponent'
-const Home = ({ posts }) => {
+const Home = (props) => {
   return (
     <div className="">
       <Head>
@@ -99,7 +99,7 @@ const Home = ({ posts }) => {
             <Parent />
           </div>
           <div>
-            <PostsApi posts={posts} />
+            <PostsApi data={props.posts}/>
           </div>
           <div>
             <CSRPosts />
@@ -118,7 +118,7 @@ const Home = ({ posts }) => {
 
 export default Home
 export const getStaticProps = async () => {
-  const API_URL = 'https://jsonplaceholder.typicode.com/users'
+  const API_URL = 'https://jsonplaceholder.typicode.com/users/'
   const request = await fetch(API_URL)
   const posts = await request.json()
   return { props: { posts }, revalidate : 60  }

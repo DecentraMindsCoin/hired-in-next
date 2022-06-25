@@ -25,7 +25,7 @@ export const getStaticProps = async ({ params }) => {
 
 //creates a dynamic paths for all the posts
 export async function getStaticPaths() {
-  const request = await fetch(`https://jsonplaceholder.typicode.com/users`)
+  const request = await fetch(`https://jsonplaceholder.typicode.com/users/`)
   const data = await request.json()
   const paths = data.map((post) => ({
     params: { id: String(post.id) },

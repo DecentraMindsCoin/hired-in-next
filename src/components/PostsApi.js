@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-const PostsApi = ({ posts }) => {
+const PostsApi = ({ data }) => {
   return (
     <div>
       <main>
-        {posts.map((post) => (
-          <Link key={post.id }href={`posts/${post.id}`}>
+        {data.map((post) => (
+          <Link key={post.id }href={`/posts/${post.id}`}>
             <a >
               <div className="pt-10">
                 <h3>{post.name}</h3>
