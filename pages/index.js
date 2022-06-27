@@ -34,6 +34,7 @@ import FetchApi from '../src/components/Fetch/FetchApi'
 import Axios from '../src/components/Fetch/Axios'
 import UseSWR from '../src/components/Fetch/UseSWR'
 import Modal from '../src/components/Modal/Modal'
+import AutoComplete from '../src/components/AutoComplete'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = (props) => {
@@ -42,7 +43,6 @@ const Home = (props) => {
       <Head>
         <title>Hire-Code-Examples</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
       <div className="flex space-y-10">
