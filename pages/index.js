@@ -125,6 +125,9 @@ const Home = (props) => {
           <div>
             <Modal />
           </div>
+          <div>
+            <AutoComplete />
+          </div>
         </div>
       </div>
     </div>
