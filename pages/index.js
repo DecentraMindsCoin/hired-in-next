@@ -35,6 +35,7 @@ import Axios from '../src/components/Fetch/Axios'
 import UseSWR from '../src/components/Fetch/UseSWR'
 import Modal from '../src/components/Modal/Modal'
 import AutoComplete from '../src/components/AutoComplete'
+import Phonebook from '../src/components/Phonebook'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = (props) => {
@@ -127,6 +128,9 @@ const Home = (props) => {
           </div>
           <div>
             <AutoComplete />
+          </div>
+          <div>
+            <Phonebook />
           </div>
         </div>
       </div>
