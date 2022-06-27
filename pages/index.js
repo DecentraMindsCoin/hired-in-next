@@ -5,7 +5,7 @@ import DataBinding from '../src/components/DataBinding'
 import DisableButton from '../src/components/DisableButton'
 import AddTwoNumbers from '../src/components/AddTwoNumber'
 import CounterApp from '../src/components/CounterApp'
-import FetchApi from '../src/components/FetchAPI'
+import Fetch from '../src/components/Fetch'
 import UsingContextApi from '../src/components/UsingContextApi'
 import ChangeFormText from '../src/components/ChangeFormText'
 import UseEffect from '../src/components/UseEffectCounter'
@@ -30,7 +30,10 @@ import CSRPosts from '../src/components/CSRPosts'
 import CountVowels from '../src/components/CountVowels'
 import Fishing from '../src/components/FishingData'
 import TodoAddDelete from '../src/components/TodoAddDelete'
-
+import FetchApi from '../src/components/Fetch/FetchApi'
+import Axios from '../src/components/Fetch/Axios'
+import UseSWR from '../src/components/Fetch/UseSWR'
+import Modal from '../src/components/Modal/Modal'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = (props) => {
@@ -78,7 +81,7 @@ const Home = (props) => {
             <CounterApp />
           </div>
           <div>
-            <FetchApi />
+            <Fetch />
           </div>
           <div>
             <UsingContextApi />
@@ -98,7 +101,7 @@ const Home = (props) => {
           <div>
             <Parent />
           </div>
-          <div>
+          {/* <div>
             <PostsApi data={props.posts}/>
           </div>
           <div>
@@ -106,9 +109,21 @@ const Home = (props) => {
           </div>
           <div>
             <Fishing />
-          </div>
+          </div> */}
           <div>
             <TodoAddDelete />
+          </div>
+          <div>
+            <FetchApi />
+          </div>
+          <div>
+            <Axios />
+          </div>
+          <div>
+            <UseSWR />
+          </div>
+          <div>
+            <Modal />
           </div>
         </div>
       </div>
@@ -118,8 +133,8 @@ const Home = (props) => {
 
 export default Home
 export const getStaticProps = async () => {
-  const API_URL = 'https://jsonplaceholder.typicode.com/users/'
-  const request = await fetch(API_URL)
+  const url = 'https://jsonplaceholder.typicode.com/users/'
+  const request = await fetch(url)
   const posts = await request.json()
   return { props: { posts }, revalidate : 60  }
 }
