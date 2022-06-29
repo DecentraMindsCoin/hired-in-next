@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { login } from '../../lib/utils'
 
 // ================ LOGIN FORM ====================
-//
 // Guidelines:
 // * You have an incomplete login form.
 // * You are not allowed to add any additional HTML elements.
