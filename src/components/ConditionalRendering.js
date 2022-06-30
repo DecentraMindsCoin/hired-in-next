@@ -21,8 +21,8 @@ const ConditionalRendering = () => {
       </h1>
      <div className={style.container}>
            <button className={style.button} onClick={() => setIsToggled(!isToggled)}>Toggle</button>
-      { isToggled && <TestImage /> }
-      {/* { isToggled ? <DataBinding /> : <p>The value is false</p> } */}
+      {/* { isToggled && <TestImage /> } */}
+      { isToggled ? <DataBinding /> : <p>The value is false</p> }
      </div>
   
     </div>
