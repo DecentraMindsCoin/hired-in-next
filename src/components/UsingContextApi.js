@@ -3,11 +3,6 @@ import { useTheme } from '../../lib/ThemeContext'
 import { themes } from '../../lib/ThemeContext'
 
 
-
-const style = {
-  
-}
-
 const UsingContextApi = () => {
   const { theme, setTheme } = useTheme()
   const toggleTheme = () => {
