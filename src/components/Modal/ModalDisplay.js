@@ -1,8 +1,7 @@
 import React from 'react'
 
+// pass closeModal prop and use by setting to false to close modal
 const ModalDisplay = ({ closeModal }) => {
-  
-  
   return (
     <div className="h-96 w-96 bg-gray-400 ">
       <div>
