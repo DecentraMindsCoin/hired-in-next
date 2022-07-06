@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 
 const Phonebook = () => {
-  const [entries, setEntries] = useState([])
+  const [entries, setEntries] = useState([]);
+
+  //add entry to phone book function called 
   const addEntryToPhoneBook = (entry) => {
     setEntries([...entries, entry].sort((a, b) =>
       a.lastName.toLowerCase() > b.lastName.toLowerCase() ? 1 : -1)
@@ -20,7 +22,7 @@ const Phonebook = () => {
 
 export default Phonebook
 
-// create entry form child element
+// create entry form child element with data entry state and submit functionality
 const EntryForm = ({ addEntryToPhoneBook }) => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
