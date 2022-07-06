@@ -1,6 +1,8 @@
 import React from 'react'
 
 const ModalDisplay = ({ closeModal }) => {
+  
+  
   return (
     <div className="h-96 w-96 bg-gray-400 ">
       <div>
