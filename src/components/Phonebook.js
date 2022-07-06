@@ -19,6 +19,8 @@ const Phonebook = () => {
 }
 
 export default Phonebook
+
+// create entry form child element
 const EntryForm = ({ addEntryToPhoneBook }) => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -63,7 +65,7 @@ const EntryForm = ({ addEntryToPhoneBook }) => {
     </form>
   )
 }
-
+// create DisplayEntries form element
 const DisplayEntries = ({ entries }) => {
   return (
     <table>
