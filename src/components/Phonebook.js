@@ -23,7 +23,8 @@ const Phonebook = () => {
 export default Phonebook
 
 // create entry form child element with data entry state and submit functionality
-const EntryForm = ({ addEntryToPhoneBook }) => {
+const EntryForm = (props) => {
+const { addEntryToPhoneBook } = props;
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
