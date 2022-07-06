@@ -5,7 +5,7 @@ import { useState } from 'react'
 const HowOther = () => {
   const [showComponent, setShowComponent] = useState(true)
   const styles = {
-    container: 'relative w-full bg-black',
+    container: 'relative w-full',
     buttons: 'flex w-full justify-between',
     button: 'rounded-xl ring-2 ring-emerald bg-gray-200',
     image: '',
