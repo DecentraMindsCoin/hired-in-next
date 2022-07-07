@@ -8,7 +8,7 @@ const HowOther = () => {
     container: 'relative w-full',
     buttons: 'flex w-full justify-between',
     button: 'rounded-xl ring-2 ring-emerald bg-gray-200',
-    image: '',
+    image: 'h-full',
   }
   const tw = styles
   return (
