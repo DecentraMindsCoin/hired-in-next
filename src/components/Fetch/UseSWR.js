@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import useSWR from 'swr'
-
+// create a function that fetches data from an api
 // yarn add swr
 // requires optional chaining ? or use wrap with Suspense from react
 const fetcher = (...args) => fetch(...args).then((resp) => resp.json())

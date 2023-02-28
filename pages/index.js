@@ -36,6 +36,10 @@ import UseSWR from '../src/components/Fetch/UseSWR'
 import Modal from '../src/components/Modal/Modal'
 import AutoComplete from '../src/components/AutoComplete'
 import Phonebook from '../src/components/Phonebook'
+import ItemsList from '../src/2023/ItemsList'
+import ItemTable from '../src/2023/ItemTable'
+import { useEffect, useState } from 'react'
+import Pokedex from '../src/2023/Pokedex'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = (props) => {
@@ -47,7 +51,8 @@ const Home = (props) => {
       </Head>
 
       <div className="flex space-y-10">
-        <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <Pokedex />
+        {/* <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
           <div>
             <ImageSlider />
           </div>
@@ -102,7 +107,7 @@ const Home = (props) => {
           <div>
             <Parent />
           </div>
-          {/* <div>
+          <div>
             <PostsApi data={props.posts}/>
           </div>
           <div>
@@ -110,7 +115,7 @@ const Home = (props) => {
           </div>
           <div>
             <Fishing />
-          </div> */}
+          </div>
           <div>
             <TodoAddDelete />
           </div>
@@ -132,7 +137,13 @@ const Home = (props) => {
           <div>
             <Phonebook />
           </div>
-        </div>
+          <div>
+            <ItemsList />
+          </div>
+          <div>
+            <ItemTable />
+          </div>
+        </div> */}
       </div>
     </div>
   )
@@ -143,5 +154,5 @@ export const getStaticProps = async () => {
   const url = 'https://jsonplaceholder.typicode.com/users/'
   const request = await fetch(url)
   const posts = await request.json()
-  return { props: { posts }, revalidate : 60  }
+  return { props: { posts }, revalidate: 60 }
 }

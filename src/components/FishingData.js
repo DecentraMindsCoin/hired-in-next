@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { fishingRegulations } from '../../lib/Data'
-
 const Fishing = () => {
   const [fishData, setFishData] = useState(() => fishingRegulations)
   return (
+    
     <div className="relative h-screen w-full">
       <ul className="absolute mx-auto w-full text-center">
         {fishData.map((data, index) => (
