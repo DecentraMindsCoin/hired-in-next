@@ -62,9 +62,9 @@ const Home = (props) => {
           {/* <div>
             <ImageSlider />
           </div> */}
-          <div>
+          {/* <div>
             <Palindrome />
-          </div>
+          </div> */}
           <div>
             <Fibonacci />
           </div>
