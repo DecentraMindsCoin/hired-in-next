@@ -59,9 +59,9 @@ const Home = (props) => {
         <TodoListNew />
         <SimpleTodo />
         <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
-          <div>
+          {/* <div>
             <ImageSlider />
-          </div>
+          </div> */}
           <div>
             <Palindrome />
           </div>
