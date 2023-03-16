@@ -68,9 +68,9 @@ const Home = (props) => {
           {/* <div>
             <Fibonacci />
           </div> */}
-          <div>
+          {/* <div>
             <ScrollEvent />
-          </div>
+          </div> */}
           <div>
             <BetterCounter />
           </div>
