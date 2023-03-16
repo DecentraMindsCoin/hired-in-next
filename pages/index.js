@@ -65,9 +65,9 @@ const Home = (props) => {
           {/* <div>
             <Palindrome />
           </div> */}
-          <div>
+          {/* <div>
             <Fibonacci />
-          </div>
+          </div> */}
           <div>
             <ScrollEvent />
           </div>
