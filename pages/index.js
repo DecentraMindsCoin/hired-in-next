@@ -71,9 +71,9 @@ const Home = (props) => {
           {/* <div>
             <ScrollEvent />
           </div> */}
-          <div>
+          {/* <div>
             <BetterCounter />
-          </div>
+          </div> */}
           <div>
             <HowComponent />
           </div>
