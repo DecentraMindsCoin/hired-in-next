@@ -40,6 +40,9 @@ import ItemsList from '../src/2023/ItemsList'
 import ItemTable from '../src/2023/ItemTable'
 import { useEffect, useState } from 'react'
 import Pokedex from '../src/2023/Pokedex'
+import ShoppingCart from '../src/2023/ShoppingCart'
+import TodoListNew from '../src/2023/TodoListNew'
+import SimpleTodo from '../src/2023/SimpleTodo'
 
 // import TicTacComponent from '../src/components/TicTacComponent'
 const Home = (props) => {
@@ -52,7 +55,10 @@ const Home = (props) => {
 
       <div className="flex space-y-10">
         <Pokedex />
-        {/* <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <ShoppingCart />
+        <TodoListNew />
+        <SimpleTodo />
+        <div className="mx-auto grid w-full max-w-3xl grid-cols-2 bg-gradient-to-r from-cyan-500 to-blue-500">
           <div>
             <ImageSlider />
           </div>
@@ -143,7 +149,7 @@ const Home = (props) => {
           <div>
             <ItemTable />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   )
